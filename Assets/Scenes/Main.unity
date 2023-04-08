@@ -284,9 +284,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1273572030}
+  - component: {fileID: 1273572034}
   - component: {fileID: 1273572033}
   - component: {fileID: 1273572032}
-  - component: {fileID: 1273572031}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -312,28 +312,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 1000}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1273572031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273572029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9188c55df3dcb2a409277d5deec99f8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  accessToken: AIzaSyCiHg7BmHEXbVM2h-35Kzd9wLjfX2QFM6g
-  mapStyle: 2
-  mapResolution: 1
-  boundingBox:
-  - 151.196023022085
-  - -33.8777251205232
-  - 151.216012372138
-  - -33.8683894791246
 --- !u!114 &1273572032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +349,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273572029}
   m_CullTransparentMesh: 1
+--- !u!114 &1273572034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273572029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5773d721ac705374baaca032546e441e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapRawImage: {fileID: 0}
+  strBaseURL: https://maps.googleapis.com/maps/api/staticmap?
+  latitude: 37.55124
+  longitude: 127.073806
+  zoom: 16
+  mapWidth: 500
+  mapHeight: 500
+  strAPIKey: AIzaSyDkwZaDAkNrnZ-nabEzFe1qe2SDe99WnaY
 --- !u!1 &1343771260
 GameObject:
   m_ObjectHideFlags: 0

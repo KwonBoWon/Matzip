@@ -24,9 +24,38 @@ public class SignUpManager : MonoBehaviour
         }
         else
         {
-            string data = JsonUtility.ToJson(user); 
-            File.WriteAllText(path, data);
+            UserDataList existingData = LoadData();
+            existingData.users.Add(user);
+            SaveData(existingData);
+
             SceneManager.LoadScene("Login");
+        }
+    }
+    
+    private UserDataList LoadData()
+    {
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            return JsonUtility.FromJson<UserDataList>(json);
+        }
+        else
+        {
+            return new UserDataList();
+        }
+    }
+
+    private void SaveData(UserDataList data)
+    {
+        try
+        {
+            string json = JsonUtility.ToJson(data);
+            File.WriteAllText(path, json);
+            Debug.Log("데이터 저장 완료");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("데이터 저장 실패: " + e.Message);
         }
     }
 
@@ -54,3 +83,5 @@ public class SignUpManager : MonoBehaviour
         Debug.Log(user.userName);
     }
 }
+
+

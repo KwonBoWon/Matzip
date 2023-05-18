@@ -14,8 +14,8 @@ public class MapManager : MonoBehaviour
     public string strBaseURL = "https://maps.googleapis.com/maps/api/staticmap?";
     public double latitude = 35.000;
     public double longitude = 35.000;
-    public float zoom = 14.5f;
-    public int mapWidth = 1000;
+    public int zoom = 14;
+    public int mapWidth = 500;
     public int mapHeight = 500;
     private string strAPIKey = ApiKey.Key;
 

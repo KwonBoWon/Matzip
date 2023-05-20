@@ -11,9 +11,11 @@ public class LoginManager : MonoBehaviour
     private string id;
     private string password;
     private string path;
+    private MainManager mainManager;
 
     private void Start()
     {
+        mainManager = MainManager.Instance;
         path = Path.Combine(Application.dataPath, "userData.json");
     }
 
@@ -25,6 +27,9 @@ public class LoginManager : MonoBehaviour
             UserData user = userList.users.Find(x => x.id == id);
             if (user.password == password)
             {
+                mainManager.id = user.id;
+                mainManager.name = user.name;
+                mainManager.userName = user.userName;
                 SceneManager.LoadScene("ShopList");
                 Debug.Log("로그인 성공");
             }

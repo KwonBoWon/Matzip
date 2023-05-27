@@ -17,6 +17,7 @@ public class MainManager : MonoBehaviour
     public string id;
     public string name;
     public string userName;
+    public string shopName;
 
     private void Start()
     {

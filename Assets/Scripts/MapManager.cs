@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using System;
+using System.IO;
 
 
 public class MapManager : MonoBehaviour
@@ -17,13 +18,36 @@ public class MapManager : MonoBehaviour
     public int zoom = 14;
     public int mapWidth = 500;
     public int mapHeight = 500;
+    
     private string strAPIKey = ApiKey.Key;
+    private string path;
+    private ShopDataList shopDataList;
 
     // Start is called before the first frame update
     void Start()
     {
         mapRawImage = GetComponent<RawImage>();
+        
+        path = Path.Combine(Application.dataPath, "shopData.json");
+        shopDataList = LoadData();
+        ShopData shop = shopDataList.shop.Find(x => x.name == MainManager.Instance.shopName);
+        latitude = shop.latitude;
+        longitude = shop.longitude;
+        
         StartCoroutine(LoadMap());
+    }
+    
+    private ShopDataList LoadData()
+    {
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            return JsonUtility.FromJson<ShopDataList>(json);
+        }
+        else
+        {
+            return new ShopDataList();
+        }
     }
 
     IEnumerator LoadMap()

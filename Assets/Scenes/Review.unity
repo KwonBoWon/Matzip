@@ -503,6 +503,7 @@ GameObject:
   - component: {fileID: 446739760}
   - component: {fileID: 446739759}
   - component: {fileID: 446739758}
+  - component: {fileID: 446739761}
   m_Layer: 5
   m_Name: Complete
   m_TagString: Untagged
@@ -625,6 +626,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446739756}
   m_CullTransparentMesh: 1
+--- !u!114 &446739761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446739756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ddd9e7f46e9af4c9c06b749425837f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadImageBtn: {fileID: 0}
+  saveJsonBtn: {fileID: 0}
+  inputField: {fileID: 0}
+  displayImage: {fileID: 0}
+  starRating: {fileID: 0}
 --- !u!1 &550109920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1778,6 +1795,7 @@ GameObject:
   - component: {fileID: 1734724145}
   - component: {fileID: 1734724144}
   - component: {fileID: 1734724147}
+  - component: {fileID: 1734724148}
   m_Layer: 5
   m_Name: Attach
   m_TagString: Untagged
@@ -1850,9 +1868,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: d1ddd9e7f46e9af4c9c06b749425837f, type: 3}
         m_TargetAssemblyTypeName: LoginManager, Assembly-CSharp
-        m_MethodName: Login
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1915,6 +1933,23 @@ MonoBehaviour:
   m_EffectColor: {r: 0.49019608, g: 0.47843137, b: 0.9490196, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1734724148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734724142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ddd9e7f46e9af4c9c06b749425837f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadImageBtn: {fileID: 1734724144}
+  saveJsonBtn: {fileID: 446739758}
+  inputField: {fileID: 1700155797}
+  displayImage: {fileID: 1218616083}
+  starRating: {fileID: 0}
 --- !u!1 &1998377136
 GameObject:
   m_ObjectHideFlags: 0

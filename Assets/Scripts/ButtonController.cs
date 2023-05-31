@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
@@ -11,6 +10,7 @@ public class ButtonController : MonoBehaviour
     {
         string buttonName = EventSystem.current.currentSelectedGameObject.name;
         MainManager.Instance.shopName = buttonName;
-        SceneManager.LoadScene("ShopInfo");
+        Debug.Log(buttonName);
+        // 씬 이동
     }
 }

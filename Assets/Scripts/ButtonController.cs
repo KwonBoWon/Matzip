@@ -13,4 +13,8 @@ public class ButtonController : MonoBehaviour
         MainManager.Instance.shopName = buttonName;
         SceneManager.LoadScene("ShopInfo");
     }
+    public void WriteReview()
+    {
+        SceneManager.LoadScene("Review2");
+    }
 }

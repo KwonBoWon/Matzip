@@ -27,5 +27,6 @@ public class ShopInfoManager : MonoBehaviour
         shopImage1.GetComponent<Image>().sprite = Resources.Load<Sprite>(PATH1);
         shopImage2.GetComponent<Image>().sprite = Resources.Load<Sprite>(PATH2);
     }
+    
 
 }

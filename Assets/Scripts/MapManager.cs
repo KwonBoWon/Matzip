@@ -35,6 +35,7 @@ public class MapManager : MonoBehaviour
         latitude = shop.latitude;
         longitude = shop.longitude;
         shopName.text = shop.shopName;
+        MainManager.Instance.realShopName = shop.shopName;
         
         StartCoroutine(LoadMap());
     }

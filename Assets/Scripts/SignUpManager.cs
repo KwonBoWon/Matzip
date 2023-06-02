@@ -16,6 +16,11 @@ public class SignUpManager : MonoBehaviour
         path = Path.Combine(Application.dataPath, "userData.json");
     }
 
+    public void Back()
+    {
+        SceneManager.LoadScene("Login");
+    }
+
     public void Continue()
     {
         if (user.id is null || user.password is null || user.name is null)

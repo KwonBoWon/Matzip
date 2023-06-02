@@ -16,6 +16,7 @@ public class MainManager : MonoBehaviour
 
     public string id;
     public string name;
+    public string realShopName;
     public string userName;
     public string shopName;
 

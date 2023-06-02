@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,7 @@ public class LoginManager : MonoBehaviour
     private string password;
     private string path;
     private MainManager mainManager;
+    public PopupHandler popup;
 
     private void Start()
     {
@@ -35,12 +37,28 @@ public class LoginManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("회원정보 없음.");
+                var seq = DOTween.Sequence();      
+    
+                seq.Append(transform.DOScale(0.95f, 0.1f));
+                seq.Append(transform.DOScale(1.05f, 0.1f));
+                seq.Append(transform.DOScale(1f, 0.1f));
+
+                seq.Play().OnComplete(() => {
+                    popup.Show();
+                });
             }
         }
         else
         {
-            Debug.Log("회원정보 없음.");
+            var seq = DOTween.Sequence();      
+    
+            seq.Append(transform.DOScale(0.95f, 0.1f));
+            seq.Append(transform.DOScale(1.05f, 0.1f));
+            seq.Append(transform.DOScale(1f, 0.1f));
+
+            seq.Play().OnComplete(() => {
+                popup.Show();
+            });
         }
     }
     
@@ -60,6 +78,19 @@ public class LoginManager : MonoBehaviour
     public void SignUp()
     {
         SceneManager.LoadScene("SignUp");
+    }
+
+    public void Close()
+    {
+        var seq = DOTween.Sequence();
+
+        seq.Append(transform.DOScale(0.95f, 0.1f));
+        seq.Append(transform.DOScale(1.05f, 0.1f));
+        seq.Append(transform.DOScale(1f, 0.1f));
+
+        seq.Play().OnComplete(() => {
+            popup.Hide();
+        });
     }
     
     public void ReadId(string s)

@@ -1,1 +1,26 @@
-{"input_string":"adsfaaaaa","image_path":"C:/Users/KYUNGWON KIM/Documents/카카오톡 받은 파일/KakaoTalk_20220717_203552936.jpg","shop_name":null,"user_name":null}
+<<<<<<< HEAD
+{"reviews":[{"review":"1","shopName":"Namwon","userName":"aa","rating":1.3465909957885743},{"review":"2","shopName":"Namwon","userName":"bb","rating":2.1988635063171388},{"review":"맛있는편","shopName":"Namwon","userName":"3","rating":1.4886364936828614},{"review":"155456ㅇㅇㅇ","shopName":"Namwon","userName":"","rating":3.5857937335968019}]}
+=======
+{
+    "reviews": [
+        {
+            "review": "1",
+            "shopName": "Namwon",
+            "userName": "aa",
+            "rating": 1.3465909957885743
+        },
+        {
+            "review": "2",
+            "shopName": "Namwon",
+            "userName": "bb",
+            "rating": 2.1988635063171388
+        },
+        {
+            "review": "맛있는편",
+            "shopName": "Namwon",
+            "userName": "3",
+            "rating": 1.4886364936828614
+        }
+    ]
+}
+>>>>>>> origin/ShopInfo

@@ -5,12 +5,13 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 using System;
 using System.IO;
+using TMPro;
 
 
 public class MapManager : MonoBehaviour
 {
     public RawImage mapRawImage;
-
+    public TextMeshProUGUI shopName; // shopInfo 씬 식당이름 
     [Header("맵 정보 설정")]
     public string strBaseURL = "https://maps.googleapis.com/maps/api/staticmap?";
     public double latitude = 35.000;
@@ -33,6 +34,8 @@ public class MapManager : MonoBehaviour
         ShopData shop = shopDataList.shop.Find(x => x.name == MainManager.Instance.shopName);
         latitude = shop.latitude;
         longitude = shop.longitude;
+        shopName.text = shop.shopName;
+        MainManager.Instance.realShopName = shop.shopName;
         
         StartCoroutine(LoadMap());
     }

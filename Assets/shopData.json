@@ -1,11 +1,64 @@
-{"shop":[{"name":"Namwon","latitude":"37.5426714","longitude":"127.0646503"},
-  {"name":"Janggun","latitude":"37.5547181","longitude":"127.08812"},
-  {"name":"Jangsuok","latitude":"37.56468","longitude":"127.0869436"},
-  {"name":"Geoboju","latitude":"37.5380016","longitude":"127.0851621"},
-  {"name":"Gaon","latitude":"37.551573","longitude":"127.1109741"},
-  {"name":"Eunhaeng","latitude":"37.5429115","longitude":"127.0985331"},
-  {"name":"Donghae","latitude":"37.5452127","longitude":"127.0667517"},
-  {"name":"Manghyang","latitude":"37.5492754","longitude":"127.0912249"},
-  {"name":"Sanul","latitude":"37.5466931","longitude":"127.1024213"},
-  {"name":"Songhwa","latitude":"37.5387443","longitude":"127.0665517"}
-]}
+{
+  "shop": [
+    {
+      "name": "Namwon",
+      "latitude": "37.5426714",
+      "longitude": "127.0646503",
+      "shopName": "원조남원추어탕"
+    },
+    {
+      "name": "Janggun",
+      "latitude": "37.5547181",
+      "longitude": "127.08812",
+      "shopName": "장군갈비"
+    },
+    {
+      "name": "Jangsuok",
+      "latitude": "37.56468",
+      "longitude": "127.0869436",
+      "shopName": "장수육"
+    },
+    {
+      "name": "Geoboju",
+      "latitude": "37.5380016",
+      "longitude": "127.0851621",
+      "shopName": "거보주"
+    },
+    {
+      "name": "Gaon",
+      "latitude": "37.551573",
+      "longitude": "127.1109741",
+      "shopName": "광장동가온"
+    },
+    {
+      "name": "Eunhaeng",
+      "latitude": "37.5429115",
+      "longitude": "127.0985331",
+      "shopName": "은행나무집"
+    },
+    {
+      "name": "Donghae",
+      "latitude": "37.5452127",
+      "longitude": "127.0667517",
+      "shopName": "동해해물"
+    },
+    {
+      "name": "Manghyang",
+      "latitude": "37.5492754",
+      "longitude": "127.0912249",
+      "shopName": "망향비빔국수"
+    },
+    {
+      "name": "Sanul",
+      "latitude": "37.5466931",
+      "longitude": "127.1024213",
+      "shopName": "산물"
+    },
+    {
+      "name": "Songhwa",
+      "latitude": "37.5387443",
+      "longitude": "127.0665517",
+      "shopName": "송화양꼬치"
+    }
+  ]
+}

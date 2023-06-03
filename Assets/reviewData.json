@@ -1,1 +1,262 @@
-{"input_string":"adsfaaaaa","image_path":"C:/Users/KYUNGWON KIM/Documents/카카오톡 받은 파일/KakaoTalk_20220717_203552936.jpg","shop_name":null,"user_name":null}
+{
+    "reviews": [
+        {
+            "review": "70대 사장님이신데 쾌활하시고 깔끔하고 청결하고 안짜고 심심하게~ 너무 맛있게 하시네요♡",
+            "shopName": "Namwon",
+            "userName": "케이오",
+            "rating": 4.3465909957885743
+        },
+        {
+            "review": "추어탕이 맛있어요",
+            "shopName": "Namwon",
+            "userName": "박정현5947",
+            "rating": 4.1988635063171388
+        },
+        {
+            "review": "새해 첫날~ 해뜨는거 보고 먹었어요.맛있고 친절하고 죠아요~",
+            "shopName": "Namwon",
+            "userName": "쥐똥8430",
+            "rating": 4.4886364936828614
+        },
+        {
+            "review": "먹다가 손톱이 나와서 딸이 놀랬어요 담엔 청결하게 해주세요",
+            "shopName": "Namwon",
+            "userName": "moo",
+            "rating": 3.5857937335968019
+        },
+        {
+            "review": "맛있고 좋아요",
+            "shopName": "Namwon",
+            "userName": "현민맘81",
+            "rating": 4.7699503898620607
+        },
+        {
+            "review": "기분좋게 그리고 무엇보다 맛있게 잘 먹고 왔습니다. 고기 정말 맛있네요.",
+            "shopName": "Janggun",
+            "userName": "rosemary17",
+            "rating": 4.3317742347717287
+        },
+        {
+            "review": "맛있어요 갈비한대 살짝 태워서 아까웠어요",
+            "shopName": "Janggun",
+            "userName": "김사깟",
+            "rating": 4.3317742347717287
+        },
+        {
+            "review": "오래전부터 단골이었다가, 이사한 이후로 몇년만에 갔더니, 비싸졌네요",
+            "shopName": "Janggun",
+            "userName": "겨울에 태어난 키코",
+            "rating": 3.3317742347717287
+        },
+        {
+            "review": "가족 모임으로 예약 했는데 장소도 넓고 반찬도 잘 리필해주고 갈비도 맛있어요",
+            "shopName": "Janggun",
+            "userName": "rachel01",
+            "rating": 4.6997950077056886
+        },
+        {
+            "review": "중곡동에 오래산분들은 알만한 맛집이에요",
+            "shopName": "Janggun",
+            "userName": "우강배",
+            "rating": 2.3317742347717287
+        },
+        {
+            "review": "중곡동에서는 나름 인지도가 있는 곳입니다.",
+            "shopName": "Jangsuok",
+            "userName": "생각을 경영한다",
+            "rating": 4.6997950077056886
+        },
+        {
+            "review": "10년을 다녔는데... 가격은 오르고 맛은 떨어지고",
+            "shopName": "Jangsuok",
+            "userName": "닉넴777",
+            "rating": 3.54321377056886
+        },
+        {
+            "review": "저 여기 생길 때부터 먹었는데 요즘 국물맛도 옛날 보다 연해졌네요",
+            "shopName": "Jangsuok",
+            "userName": "Wo36",
+            "rating": 3.897950077056886
+        },
+        {
+            "review": "고기가 진짜 신선하고 맛있어요",
+            "shopName": "Geoboju",
+            "userName": "오늘도 포만감",
+            "rating": 4.8047356605529789
+        },
+        {
+            "review": "역시 돼지갈비는 거보주",
+            "shopName": "Geoboju",
+            "userName": "오늘도 포만감",
+            "rating": 4.7047356605529789
+        },
+        {
+            "review": "정겨운 식당,,",
+            "shopName": "Geoboju",
+            "userName": "ㅎㅂㄹㅅㅅ",
+            "rating": 4.3047356605529789
+        },
+        {
+            "review": "냉면과 돼지갈비가 너무 맛있어요",
+            "shopName": "Geoboju",
+            "userName": "passion303",
+            "rating": 4.8047356605529789
+        },
+        {
+            "review": "좋아요",
+            "shopName": "Geoboju",
+            "userName": "프란치스카63",
+            "rating": 4.5047356605529789
+        },
+        {
+            "review": "주말 저녁에 가족외식 식사하러 와서 광장동 가온으로 왔어요",
+            "shopName": "Gaon",
+            "userName": "맛맛",
+            "rating": 4.583806228637695
+        },
+        {
+            "review": "보쌈은 그냥 무난한 보쌈맛 그래도 기본제공 김치가 맛있어요",
+            "shopName": "Gaon",
+            "userName": "오리오리오리꽥꽥",
+            "rating": 4.283806228637695
+        },
+        {
+            "review": "음식도 다 맛있고 한강뷰가 예술이었어요",
+            "shopName": "Gaon",
+            "userName": "랄라7",
+            "rating": 4.683806228637695
+        },
+        {
+            "review": "음식이 전체적으로 다 깔끔하고 매장이 넓어 단체모임하기 좋아요",
+            "shopName": "Gaon",
+            "userName": "BEEN923",
+            "rating": 4.383806228637695
+        },
+        {
+            "review": "비오는날 막걸리 김치전, 곰국시는 최고의맛",
+            "shopName": "Gaon",
+            "userName": "천사28",
+            "rating": 4.483806228637695
+        },
+        {
+            "review": "어린이대공원 올때 들리는 곳 작년에 우연히 왔다가 맛있어서 또 왔어요",
+            "shopName": "Eunhaeng",
+            "userName": "사랑표71",
+            "rating": 4.811809730529785
+        },
+        {
+            "review": "한방백숙 맛있어요~ 밑반찬도 깔끔하고 집에서 한맛이라 너무 좋아요",
+            "shopName": "Eunhaeng",
+            "userName": "sundew31",
+            "rating": 4.611809730529785
+        },
+        {
+            "review": "한국 전통음식 먹는 기분입니다.",
+            "shopName": "Eunhaeng",
+            "userName": "별을따다23",
+            "rating": 4.211809730529785
+        },
+        {
+            "review": "청국장 너무 맛있어요~~재방문 할꺼에요",
+            "shopName": "Eunhaeng",
+            "userName": "깜찍 마누라2",
+            "rating": 4.411809730529785
+        },
+        
+        {
+            "review": "오래간만에가니 사장님이 반겨주시네요 올 때마다 만족스러운 곳",
+            "shopName": "Donghae",
+            "userName": "kpp",
+            "rating": 4.313651084899902
+        },
+        {
+            "review": "무슨말이 필요합니까. 드셔보세요.",
+            "shopName": "Donghae",
+            "userName": "곽우석",
+            "rating": 4.813651084899902
+        },
+        {
+            "review": "와우~!! 진짜 너무 대단히 별로에요",
+            "shopName": "Donghae",
+            "userName": "kis",
+            "rating": 2.313651084899902
+        },
+        {
+            "review": "친절한사장님과 매일신선한 음식들 진짜짱",
+            "shopName": "Donghae",
+            "userName": "송대댁윤블리",
+            "rating": 4.513651084899902
+        },
+        {
+            "review": "군부대앞에서 먹었던 그때 그맛",
+            "shopName": "Manghyang",
+            "userName": "권보원",
+            "rating": 4.6154924392700199
+        },
+        {
+            "review": "작년에 본점가서 먹었는데, 집근처에 생겨서 좋네요",
+            "shopName": "Manghyang",
+            "userName": "아이야83",
+            "rating": 4.7154924392700199
+        },
+        {
+            "review": "양도 엄청나게 많고! 비빔국수 소스는 적당히 맵고 맛있어요",
+            "shopName": "Manghyang",
+            "userName": "Ye Rimmmee",
+            "rating": 4.2154924392700199
+        },{
+            "review": "요즘 주말마다 오는듯 ㅎㅎㅎ",
+            "shopName": "Manghyang",
+            "userName": "leny",
+            "rating": 4.4154924392700199
+        },
+        {
+            "review": "아차산 산행후에 또 들렀네요",
+            "shopName": "Sanul",
+            "userName": "산강호수",
+            "rating": 4.5419466495513918
+        },
+        {
+            "review": "오랜만에 건강한 한끼를 했네요",
+            "shopName": "Sanul",
+            "userName": "Kakao45",
+            "rating": 4.6419466495513918
+        },
+        {
+            "review": "정갈한 집밥느낌이에요 너무 맛있어요",
+            "shopName": "Sanul",
+            "userName": "분홍 왈왈이",
+            "rating": 4.8419466495513918
+        },
+        {
+            "review": "음식이 맛있는 곳예요",
+            "shopName": "Sanul",
+            "userName": "adventure79",
+            "rating": 4.6419466495513918
+        },
+        {
+            "review": "가지튀김 겉바 속촉!!! 안짜서 좋아요",
+            "shopName": "Songhwa",
+            "userName": "coldbrew",
+            "rating": 4.56296403408050539
+        },
+        {
+            "review": "화력이 쎄서 고기가 금방 익어요!! 양고기는 맛있어요~",
+            "shopName": "Songhwa",
+            "userName": "최진만598",
+            "rating": 4.6296403408050539
+        },
+        {
+            "review": "늘 가던 곳만 가다가 다른 곳 가보자 해서 왔어요 친절하고 맛있어요",
+            "shopName": "Songhwa",
+            "userName": "sosohara",
+            "rating": 4.7296403408050539
+        },
+        {
+            "review": "양고기는 첨인데 진짜 맛있네요",
+            "shopName": "Songhwa",
+            "userName": "다이어트지만괜찮아",
+            "rating": 4.7296403408050539
+        }
+    ]
+}

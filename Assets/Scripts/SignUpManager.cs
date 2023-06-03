@@ -20,6 +20,11 @@ public class SignUpManager : MonoBehaviour
     {
         SceneManager.LoadScene("Login");
     }
+    public void BackToList()
+    {
+        SceneManager.LoadScene("ShopList");
+    }
+
 
     public void Continue()
     {

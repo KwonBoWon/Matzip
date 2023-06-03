@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using SimpleJSON;
-using NativeGalleryNamespace;
 using TMPro;  // TextMeshPro namespace
 
 public class ReviewUploadManager : MonoBehaviour

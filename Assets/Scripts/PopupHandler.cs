@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
+// DOTween 이라는 애니메이션 툴을 활용해 작성한 Popup창 기능을 설정하는 클래스
 public class PopupHandler : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -13,6 +14,7 @@ public class PopupHandler : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    // 팝업창을 띄우는 메소드
     public void Show()
     {
         gameObject.SetActive(true);
@@ -24,6 +26,7 @@ public class PopupHandler : MonoBehaviour
         seq.Play();
     }
     
+    // 팝업창을 숨기는 메소드
     public void Hide()
     {
         var seq = DOTween.Sequence();

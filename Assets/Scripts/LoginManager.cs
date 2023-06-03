@@ -21,8 +21,10 @@ public class LoginManager : MonoBehaviour
         path = Path.Combine(Application.dataPath, "userData.json");
     }
 
+    // 로그인 버튼 클릭 시 실행되는 메소드
     public void Login()
     {
+        // userData.json 에서 리스트를 받아와서 입력한 정보와 비교하여 로그인을 수행한다.
         UserDataList userList = LoadData();
         if (userList.users.Find(x => x.id == id) is not null)
         {
@@ -37,6 +39,7 @@ public class LoginManager : MonoBehaviour
             }
             else
             {
+                // 로그인 실패시 DOTween을 이용하여 팝업창을 띄우는 코드 
                 var seq = DOTween.Sequence();      
     
                 seq.Append(transform.DOScale(0.95f, 0.1f));
@@ -50,6 +53,7 @@ public class LoginManager : MonoBehaviour
         }
         else
         {
+            // 로그인 실패시 DOTween을 이용하여 팝업창을 띄우는 코드
             var seq = DOTween.Sequence();      
     
             seq.Append(transform.DOScale(0.95f, 0.1f));
@@ -62,6 +66,7 @@ public class LoginManager : MonoBehaviour
         }
     }
     
+    // userData.json 에 있는 user 정보를 받아오는 메소드
     private UserDataList LoadData()
     {
         if (File.Exists(path))
@@ -75,13 +80,17 @@ public class LoginManager : MonoBehaviour
         }
     }
     
+    // 회원가입 씬으로 넘기는 메소드
     public void SignUp()
     {
         SceneManager.LoadScene("SignUp");
     }
 
+    
+    // 팝업창 닫기 버튼을 클릭했을 때 실행되는 메소드
     public void Close()
     {
+        // DOTween 을 이용하여 popup 창을 닫는 코드.
         var seq = DOTween.Sequence();
 
         seq.Append(transform.DOScale(0.95f, 0.1f));
@@ -93,12 +102,14 @@ public class LoginManager : MonoBehaviour
         });
     }
     
+    // 입력한 id를 받아온다.
     public void ReadId(string s)
     {
         id = s;
         Debug.Log(id);
     }
     
+    // 입력한 password를 받아온다.
     public void ReadPassword(string s)
     {
         password = s;

@@ -18,12 +18,12 @@ public class ShopInfoManager : MonoBehaviour
         ShopImageLoad();
     }
 
-    void ShopImageLoad()
+    void ShopImageLoad() // Resources폴더에서 식당에 맞는 이미지 두개 가져옴
     {
         shopName = mainManager.shopName;
         string PATH1 = shopName + "1";
         string PATH2 = shopName + "2";
-        // Resources폴더에서 이미지 가져옴
+
         shopImage1.GetComponent<Image>().sprite = Resources.Load<Sprite>(PATH1);
         shopImage2.GetComponent<Image>().sprite = Resources.Load<Sprite>(PATH2);
     }

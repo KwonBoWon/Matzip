@@ -5,7 +5,6 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using SimpleJSON;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 
@@ -28,7 +27,7 @@ public class ReviewLoader : MonoBehaviour
         ReviewLoad();
         reviewCntText.text = reviewCnt.ToString() + "개의 리뷰";
     }
-    private void ReviewLoad()
+    private void ReviewLoad() // 식당에 맞는 리뷰 가져오기
     {
         existingData = LoadData();
         foreach (var item in existingData.reviews)
@@ -37,11 +36,12 @@ public class ReviewLoader : MonoBehaviour
             {
                 reviewCnt++;
                 reviewAvr += item.rating; 
-                GameObject temp = Instantiate(reviewPrefab);
-                Vector3 scale = new Vector3 (0.5625f, 0.5625f, 0.5625f);
+                GameObject temp = Instantiate(reviewPrefab); // 리뷰 프리팹 생서
+                Vector3 scale = new Vector3 (0.5625f, 0.5625f, 0.5625f); // 화면 스케일 조정
                 temp.transform.localScale = scale;
                 
                 temp.transform.SetParent(layoutGroup.transform);
+                // 리뷰 이름, 내용, 별점 불러오기
                 temp.transform.Find("Name").gameObject.GetComponent<TextMeshProUGUI>().text = item.userName;
                 temp.transform.Find("Content").gameObject.GetComponent<TextMeshProUGUI>().text = item.review;
                 temp.transform.Find("Rating").gameObject.GetComponent<TextMeshProUGUI>().text = (Mathf.Floor(item.rating * 10) * 0.1f).ToString();
@@ -50,7 +50,7 @@ public class ReviewLoader : MonoBehaviour
         reviewAvr = (Mathf.Floor(reviewAvr/reviewCnt * 10) * 0.1f);
         reviewAvrText.text = reviewAvr.ToString();
     }
-    private ReviewDataList LoadData()
+    private ReviewDataList LoadData() // 데이터 로드
     {
         if (File.Exists(path))
         {
@@ -67,7 +67,7 @@ public class ReviewLoader : MonoBehaviour
 
 
 [System.Serializable]
-public class ReviewData
+public class ReviewData // 리뷰 데이터 형식
 {
     public string review;
     public string shopName;
@@ -75,7 +75,7 @@ public class ReviewData
     public float rating;
 }
 [System.Serializable]
-public class ReviewDataList
+public class ReviewDataList // 리뷰 데이터들을 담는 클래스
 {
     public List<ReviewData> reviews = new List<ReviewData>();
 }

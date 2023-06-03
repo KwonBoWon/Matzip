@@ -1,5 +1,5 @@
 [System.Serializable]
-public class ShopData
+public class ShopData // 식당 데이터 형식
 {
     public string name;
     public double latitude;

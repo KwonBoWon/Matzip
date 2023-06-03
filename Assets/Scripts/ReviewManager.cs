@@ -5,7 +5,6 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using SimpleJSON;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 
@@ -30,25 +29,25 @@ public class ReviewManager : MonoBehaviour
         review.shopName = mainManager.shopName;
         path = Path.Combine(Application.dataPath, "reviewData.json");
     }
-    public void SliderButton()
+    public void SliderButton() // 별점 슬라이드로 조정
     {
         rating = ratingSlider.value; 
         ratingText.text = (Mathf.Floor(rating * 10) * 0.1f).ToString(); 
         review.rating = rating;
     }
-    public void InputFiled(){
+    public void InputFiled(){ // 리뷰 내용 적는 텍스트 필드
         review.review = inputField.text;
     }
 
 
-    public void Write(){
+    public void Write(){ // 리뷰작성
         ReviewDataList existingData = LoadData();
         Debug.Log(existingData);
         existingData.reviews.Add(review);
         SaveData(existingData);
         SceneManager.LoadScene("ShopInfo");
     }
-    private ReviewDataList LoadData()
+    private ReviewDataList LoadData() // 데이터 로드
     {
         if (File.Exists(path))
         {
@@ -60,7 +59,7 @@ public class ReviewManager : MonoBehaviour
             return new ReviewDataList();
         }
     }
-    public void SaveData(ReviewDataList data)
+    public void SaveData(ReviewDataList data) // 데이터 저장
     {
         try
         {

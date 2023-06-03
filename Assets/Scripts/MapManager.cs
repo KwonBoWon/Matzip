@@ -20,18 +20,17 @@ public class MapManager : MonoBehaviour
     public int mapWidth = 500;
     public int mapHeight = 500;
     
-    private string strAPIKey = ApiKey.Key;
+    private string strAPIKey = ApiKey.Key; // 구글맵 api키
     private string path;
     private ShopDataList shopDataList;
-
-    // Start is called before the first frame update
     void Start()
     {
         mapRawImage = GetComponent<RawImage>();
         
-        path = Path.Combine(Application.dataPath, "shopData.json");
+        path = Path.Combine(Application.dataPath, "shopData.json"); // shopData.json에서 식당 정보 불러오기
         shopDataList = LoadData();
         ShopData shop = shopDataList.shop.Find(x => x.name == MainManager.Instance.shopName);
+        // 위도 경도 불러오기
         latitude = shop.latitude;
         longitude = shop.longitude;
         shopName.text = shop.shopName;
@@ -53,18 +52,17 @@ public class MapManager : MonoBehaviour
         }
     }
 
-    IEnumerator LoadMap()
+    IEnumerator LoadMap() // 구글맵 로드
     {
         string url = strBaseURL + "center=" + latitude + "," + longitude +
             "&zoom=" + zoom.ToString() + "&size=" + mapWidth.ToString() + "x" + mapHeight.ToString()
-            + "&key=" + strAPIKey;   //URL 생성  - 향후 StringBuilder를 이용해 적용.
-
+            + "&key=" + strAPIKey;
         Debug.Log("URL : " + url);
 
-        url = UnityWebRequest.UnEscapeURL(url); //Url에 대한  Web 요청
-        UnityWebRequest req = UnityWebRequestTexture.GetTexture(url); //Texture에 대한 요청 
+        url = UnityWebRequest.UnEscapeURL(url); // Url에 대한  Web 요청
+        UnityWebRequest req = UnityWebRequestTexture.GetTexture(url); // Texture에 대한 요청 
 
-        yield return req.SendWebRequest();  //요청 전송
+        yield return req.SendWebRequest();  // 요청 전송
 
         mapRawImage.texture = DownloadHandlerTexture.GetContent(req); // 받은 Texture를 RAW 이미지에 적용
     }

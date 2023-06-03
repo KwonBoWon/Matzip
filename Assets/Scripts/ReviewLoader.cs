@@ -18,10 +18,14 @@ public class ReviewLoader : MonoBehaviour
     private ReviewDataList existingData;
     public GameObject layoutGroup;
     public TextMeshProUGUI reviewCntText;
+<<<<<<< HEAD
     public TextMeshProUGUI reviewAvrText;
     private float reviewAvr = 0;
     private int reviewCnt = 0;
     
+=======
+    private int reviewCnt = 0;
+>>>>>>> origin/ShopInfo
     void Start()
     {
         mainManager = MainManager.Instance;
@@ -37,7 +41,11 @@ public class ReviewLoader : MonoBehaviour
             if (item.shopName == mainManager.shopName)
             {
                 reviewCnt++;
+<<<<<<< HEAD
                 reviewAvr += item.rating;
+=======
+                Debug.Log("loaing");
+>>>>>>> origin/ShopInfo
                 GameObject temp = Instantiate(reviewPrefab);
                 temp.transform.SetParent(layoutGroup.transform);
                 temp.transform.Find("Name").gameObject.GetComponent<TextMeshProUGUI>().text = item.userName;
@@ -45,8 +53,11 @@ public class ReviewLoader : MonoBehaviour
                 temp.transform.Find("Rating").gameObject.GetComponent<TextMeshProUGUI>().text = (Mathf.Floor(item.rating * 10) * 0.1f).ToString();
             }
         }
+<<<<<<< HEAD
         reviewAvr = (Mathf.Floor(reviewAvr/reviewCnt * 10) * 0.1f);
         reviewAvrText.text = reviewAvr.ToString();
+=======
+>>>>>>> origin/ShopInfo
     }
     private ReviewDataList LoadData()
     {

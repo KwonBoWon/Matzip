@@ -1,1 +1,26 @@
+<<<<<<< HEAD
 {"reviews":[{"review":"1","shopName":"Namwon","userName":"aa","rating":1.3465909957885743},{"review":"2","shopName":"Namwon","userName":"bb","rating":2.1988635063171388},{"review":"맛있는편","shopName":"Namwon","userName":"3","rating":1.4886364936828614},{"review":"155456ㅇㅇㅇ","shopName":"Namwon","userName":"","rating":3.5857937335968019}]}
+=======
+{
+    "reviews": [
+        {
+            "review": "1",
+            "shopName": "Namwon",
+            "userName": "aa",
+            "rating": 1.3465909957885743
+        },
+        {
+            "review": "2",
+            "shopName": "Namwon",
+            "userName": "bb",
+            "rating": 2.1988635063171388
+        },
+        {
+            "review": "맛있는편",
+            "shopName": "Namwon",
+            "userName": "3",
+            "rating": 1.4886364936828614
+        }
+    ]
+}
+>>>>>>> origin/ShopInfo

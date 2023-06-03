@@ -1089,7 +1089,10 @@ MonoBehaviour:
   reviewPrefab: {fileID: 8380002642527170541, guid: 21f89b2e9a723ac409ec397c43f50332, type: 3}
   layoutGroup: {fileID: 1286481523}
   reviewCntText: {fileID: 129509590}
+<<<<<<< HEAD
   reviewAvrText: {fileID: 1504545760}
+=======
+>>>>>>> origin/ShopInfo
 --- !u!1 &1027100809
 GameObject:
   m_ObjectHideFlags: 0

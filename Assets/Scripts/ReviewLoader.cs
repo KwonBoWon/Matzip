@@ -36,8 +36,11 @@ public class ReviewLoader : MonoBehaviour
             if (item.shopName == mainManager.shopName)
             {
                 reviewCnt++;
-                reviewAvr += item.rating;
+                reviewAvr += item.rating; 
                 GameObject temp = Instantiate(reviewPrefab);
+                Vector3 scale = new Vector3 (0.5625f, 0.5625f, 0.5625f);
+                temp.transform.localScale = scale;
+                
                 temp.transform.SetParent(layoutGroup.transform);
                 temp.transform.Find("Name").gameObject.GetComponent<TextMeshProUGUI>().text = item.userName;
                 temp.transform.Find("Content").gameObject.GetComponent<TextMeshProUGUI>().text = item.review;

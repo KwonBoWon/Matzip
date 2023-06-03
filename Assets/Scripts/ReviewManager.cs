@@ -26,7 +26,7 @@ public class ReviewManager : MonoBehaviour
         mainManager = MainManager.Instance;
         shopName.text = mainManager.realShopName;
         review = new ReviewData();
-        review.userName = mainManager.name;
+        review.userName = mainManager.userName;
         review.shopName = mainManager.shopName;
         path = Path.Combine(Application.dataPath, "reviewData.json");
     }
